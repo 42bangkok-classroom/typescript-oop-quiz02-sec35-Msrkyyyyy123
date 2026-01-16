@@ -24,11 +24,6 @@ export async function getEdgePosts() {
 
     return result;
   } catch (error) {
-    console.error('Error fetching posts:', error);
-    throw error;
+    return [];
   }
 }
-
-getEdgePosts().then(data => {
-   console.log(data);
-});
